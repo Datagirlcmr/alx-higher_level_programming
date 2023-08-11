@@ -42,6 +42,11 @@ Now test it:
     Traceback (most recent call last):
     ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 1 is different from 2)
 
+
+    >>> print(lazy_matrix_mul([[9, 4], [2, 7.0]], [[1], [4, 9]]))
+    Traceback (most recent call last):
+    TypeError: can't multiply sequence by non-int of type 'float'
+
     >>> print(lazy_matrix_mul([[9, 4, 4], [2, 8, 2]], [[1, 2], [4, 9]]))
     Traceback (most recent call last):
     ValueError: matmul: Input operand 1 has a mismatch in its core dimension 0, with gufunc signature (n?,k),(k,m?)->(n?,m?) (size 2 is different from 3)

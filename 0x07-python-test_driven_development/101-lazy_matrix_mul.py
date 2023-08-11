@@ -2,7 +2,7 @@
 """
 Module composed by a function that multiplies 2 matrices
 """
-import numpy as np
+import numpy
 
 
 def lazy_matrix_mul(m_a, m_b):
@@ -16,4 +16,4 @@ def lazy_matrix_mul(m_a, m_b):
         result of the multiplication
     """
 
-    return (np.matmul(m_a, m_b))
+    return (numpy.matmul(m_a, m_b))
